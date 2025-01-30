@@ -36,3 +36,7 @@ For Windows (Recommended):
        $flet run (your file name)
 
 4. Make sure the file that edited ur python file in ends with ".py" , as it is a python code.
+
+
+Theres still a lot in progress , we will widely announce it when the OS is ready to be launched.
+[AdaOS](https://github.com/2048hertz/AdaOS) - This is the original AdaOS repository, check it out!.
