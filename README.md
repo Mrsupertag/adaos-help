@@ -12,6 +12,8 @@ It contains categories depending on what the user needs help with based on our A
 
 [categories.py](categories.py) - All of the articles and the categories are in this file 
 
+[settings.py](settings.py) - The UI code for the settings page
+
 [code.py](code.py) - This is the entire apps code in one single file , made for users who want to test the app on their normal desktop envirenments.
 
 
