@@ -27,3 +27,12 @@ For Windows (Recommended):
      Open ur windows powershell and type this:
 
        $pip install flet
+
+2. Create a new python file in your desktop and edit that file with our [code.py](code.py) code.
+3. Now run tht code
+
+     Open the terminal and type:
+
+       $flet run (your file name)
+
+4. Make sure the file that edited ur python file in ends with ".py" , as it is a python code.
