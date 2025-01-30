@@ -15,3 +15,7 @@ It contains categories depending on what the user needs help with based on our A
 [code.py](code.py) - This is the entire apps code in one single file , made for users who want to test the app on their normal desktop envirenments.
 
 
+# How to run it?
+
+This app will be installed on our AdaOS by default after installing it in your desktop , but if anyone is willing to test this code for themselves
+they have to go through a few steps first. 
