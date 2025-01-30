@@ -19,3 +19,11 @@ It contains categories depending on what the user needs help with based on our A
 
 This app will be installed on our AdaOS by default after installing it in your desktop , but if anyone is willing to test this code for themselves
 they have to go through a few steps first. 
+
+For Windows (Recommended): 
+
+1. Install Flet
+
+     Open ur windows powershell and type this:
+
+       $pip install flet
