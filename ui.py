@@ -1,14 +1,24 @@
 import flet as ft
-from navigation import navigate_to_category, go_back
+from navigation import navigate_to_category
 
 def create_ui(page):
-    # Top Bar
+    """Creates the home page UI"""
+
+    # Top Bar (with settings and search buttons)
     top_bar = ft.Container(
         content=ft.Row(
             [
-                ft.IconButton(icon=ft.icons.SETTINGS, icon_color="white"),
+                ft.IconButton(
+                    icon=ft.icons.SETTINGS,
+                    icon_color="white",
+                    on_click=lambda e: navigate_to_category(e, "Settings", page)
+                ),
                 ft.Text("User Manual", size=22, weight="bold", color="white"),
-                ft.IconButton(icon=ft.icons.SEARCH, on_click=lambda e: page.go("/search"), icon_color="white"),
+                ft.IconButton(
+                    icon=ft.icons.SEARCH,
+                    on_click=lambda e: page.go("/search"),  # Placeholder for search functionality
+                    icon_color="white"
+                )
             ],
             alignment=ft.MainAxisAlignment.SPACE_BETWEEN
         ),
@@ -26,7 +36,7 @@ def create_ui(page):
         alignment=ft.alignment.center
     )
 
-    # Category Buttons
+    # List of Help Categories
     categories = [
         "Linux Terminal",
         "File Management",
@@ -39,6 +49,7 @@ def create_ui(page):
         "Troubleshooting"
     ]
 
+    # Creating buttons dynamically for all categories
     category_buttons = ft.Column(
         controls=[
             ft.Row([
@@ -57,7 +68,7 @@ def create_ui(page):
         ]
     )
 
-    # Add Components to Page
+    # Adding UI Elements to Page
     page.add(
         ft.Row([top_bar], alignment=ft.MainAxisAlignment.CENTER),
         heading,
